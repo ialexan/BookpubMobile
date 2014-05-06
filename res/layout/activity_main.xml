@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="60dp" >
+
+    <EditText
+        android:id="@+id/TextEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:hint="@string/textview_email" />
+
+    <EditText
+        android:id="@+id/TextPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextEmail"
+        android:layout_marginTop="5dip"
+        android:background="@android:drawable/editbox_background"
+        android:hint="@string/textview_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextPassword"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/rounded_button"
+        android:onClick="sendToStoreAndLibrary"
+        android:text="@string/button_login"
+        android:textColor="@color/white_color" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:onClick="sendToRegister"
+        android:text="@string/button_registeration"
+        android:textColor="@color/white_color"
+        android:textSize="12sp" />
+
+</RelativeLayout>

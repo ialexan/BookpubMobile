@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="app_name">Bookpub</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Bookpub</string>
+    <string name="textview_password">Password </string>
+    <string name="button_registeration">Don\'t have an account? Please register. It\'s Free!</string>
+    <string name="button_register">Register</string>
+    <string name="button_login">Login</string>
+    <string name="title_activity_register">Sign Up - Bookpub</string>
+    <string name="textview_firstname">First Name </string>
+    <string name="textview_lastname">Last Name </string>
+    <string name="textview_email">Email </string>
+    <string name="textview_birthday">Birthday </string>
+    <string name="title_activity_store_and_collection">Store and Collection</string>
+    <string name="library">Library</string>
+    <string name="store">Store</string>
+    <string name="stars">**</string>
+    <string name="author">John Doe</string>
+    <string name="my_first_book">My First Book</string>
+    <string name="title_activity_book">BookActivity</string>
+    <string name="search">Search</string>
+    <string name="price">$0.0</string>
+    <string name="buy">Buy</string>
+    <string name="LoginURL">http://cs3.calstatela.edu:4042/bookpub/j_spring_security_check</string>
+    <string name="RegisterURL">http://cs3.calstatela.edu:4042/bookpub/service/user/register</string>
+    <string name="BookURL">http://cs3.calstatela.edu:4042/bookpub/service/book/</string>
+    <string name="BooksURL">http://cs3.calstatela.edu:4042/bookpub/service/books</string>
+    <string name="ImageURL">http://cs3.calstatela.edu:4042/bookpub/service/file/</string>
+    <string name="PurchaseURL">http://cs3.calstatela.edu:4042/bookpub/service/purchase/book/</string>
+    <string name="LibraryURL">http://cs3.calstatela.edu:4042/bookpub/service/library</string>
+    <string name="EbookURL">http://cs3.calstatela.edu:4042/bookpub/service/epubFile/</string>
+    <string name="description">Description</string>
+    <string name="reviews">Reviews</string>
+    <string name="book_description">Book description</string>
+    <string name="button_top_rated">TOP RATED</string>
+    <string name="button_my_recommendation">RECOMMENDATION</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_ebook">EbookActivity</string>
+
+</resources>

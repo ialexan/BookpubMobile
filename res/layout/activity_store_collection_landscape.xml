@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/leftBar"
+        android:layout_width="135dip"
+        android:layout_height="match_parent"
+        android:background="@color/black_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_color"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonTopRated"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:onClick="clickTopRated"
+                android:text="@string/button_top_rated"
+                android:textColor="@color/white_color"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/TopRatedTabImage"
+                android:layout_width="5dip"
+                android:layout_height="match_parent"
+                android:background="@color/blue_color"
+                android:gravity="center" />
+        </LinearLayout>
+        <!-- On Click will; change the color of this image -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:gravity="center"
+            android:src="@color/grey_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_color"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonRecommendation"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:onClick="clickTopRecommendation"
+                android:text="@string/button_my_recommendation"
+                android:textColor="@color/white_color"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/RecommendationTabImage"
+                android:layout_width="5dip"
+                android:layout_height="match_parent"
+                android:background="@color/black_color"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:gravity="center"
+            android:src="@color/grey_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/leftBar"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/fragment_tab"
+            android:name="com.ialexan.bookpub.fragment.TabFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

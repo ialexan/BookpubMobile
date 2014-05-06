@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/>
+    <item
+        android:id="@+id/menu_store"
+        android:orderInCategory="0"
+        android:showAsAction="always"
+        android:title="@string/store"/>
+    <item
+        android:id="@+id/menu_library"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="@string/library"/>
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_action_search"
+        android:orderInCategory="2"
+        android:showAsAction="always"
+        android:title="@string/search"/>
+
+</menu>

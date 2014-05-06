@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- ListRow Left side Thumbnail image -->
+
+    <LinearLayout
+        android:id="@+id/thumbnail_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/image_bg"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/image_view_coverpage"
+            android:layout_width="61dip"
+            android:layout_height="76dip"
+            android:gravity="center"
+            android:src="@drawable/no_image" />
+    </LinearLayout>
+
+    <!-- Title Of The Book -->
+
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/thumbnail_view"
+        android:layout_toRightOf="@id/thumbnail_view"
+        android:hint="@string/my_first_book"
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- Author's Name -->
+
+    <TextView
+        android:id="@+id/author_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_view"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@id/thumbnail_view"
+        android:hint="@string/author"
+        android:textColor="#343434"
+        android:textSize="10dip" />
+
+    <!-- Rightend Rating -->
+
+    <TextView
+        android:id="@+id/rating_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/title_view"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:hint="@string/stars"
+        android:textColor="#10bcc9"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Rightend Arrow -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow" />
+
+</RelativeLayout>
